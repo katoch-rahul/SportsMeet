@@ -18,6 +18,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="#14A4FF"
+        android:onClick="signin"
         android:text="@string/Sign_In"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

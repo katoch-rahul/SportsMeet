@@ -23,12 +23,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-   public void signin(View view)
+   public void openSignin(View view)
     {
         Intent i=new Intent(this, SignInActivity.class);
         startActivity(i);
     }
 
-    public void onClick(View view)
-    {}
+    public void openRegister(View view)
+    {
+        Intent j=new Intent(this, RegisterActivity.class);
+                startActivity(j);
+    }
 }

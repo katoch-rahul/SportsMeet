@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "784588742064",
+    "firebase_url": "https://sportsmeet-2d5cd.firebaseio.com",
+    "project_id": "sportsmeet-2d5cd",
+    "storage_bucket": "sportsmeet-2d5cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784588742064:android:75820c7371977c97",
+        "android_client_info": {
+          "package_name": "com.hpu.sportsmeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784588742064-25tae066qmmucuepuj5nsh98354k327c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hpu.sportsmeet",
+            "certificate_hash": "d23cd033c908a8a8a6c498af018d164eb4d33342"
+          }
+        },
+        {
+          "client_id": "784588742064-922i1ieb8ias9mj5l71gd38m57bjhadm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3YMlQ-1w-hDag75ZSRktv647C-bCldy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784588742064-922i1ieb8ias9mj5l71gd38m57bjhadm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

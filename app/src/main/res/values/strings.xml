@@ -19,6 +19,9 @@
     <string name="todo1">TODO</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="srno">INTEGER AUTOCREDIT</string>
+    <string name="title_activity_binding">BindingActivity</string>
+    <string name="title_activity_room">room</string>
 
 
 </resources>

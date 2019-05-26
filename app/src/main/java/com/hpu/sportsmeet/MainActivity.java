@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.view.View;
 
-
-
+import com.hpu.sportsmeet.Login.RegisterActivity;
+import com.hpu.sportsmeet.Login.SignInActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -26,7 +26,10 @@ public class MainActivity extends AppCompatActivity {
    public void openSignin(View view)
     {
         Intent i=new Intent(this, SignInActivity.class);
-        startActivity(i);
+        Intent j=new Intent(this, com.hpu.sportsmeet.MainMenu.class);
+
+        startActivity(j);
+
     }
 
     public void openRegister(View view)

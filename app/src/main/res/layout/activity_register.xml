@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login.RegisterActivity">
+    tools:context=".Login.RegisterActivity"
+    android:id="@+id/user_register_layout">
 
     <EditText
         android:id="@+id/nametf"
@@ -56,7 +57,7 @@
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="Semester"
-        android:inputType="number"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.837"
@@ -75,7 +76,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:hint="Roll Number"
+        android:hint="Roll No"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,8 +87,10 @@
 
     <Button
         android:id="@+id/button5"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="175dp"
+        android:textColor="#ffffff"
+
+        android:background="@color/colorPrimary"
+        android:layout_width="311dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"

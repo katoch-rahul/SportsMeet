@@ -1,4 +1,4 @@
-package com.hpu.sportsmeet;
+package com.hpu.sportsmeet.Dash;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
@@ -6,7 +6,8 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.annotation.NonNull;
 import android.view.MenuItem;
-import android.widget.TextView;
+
+import com.hpu.sportsmeet.R;
 
 public class MainMenu extends AppCompatActivity
         implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -15,13 +16,17 @@ public class MainMenu extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main_menu);
         BottomNavigationView navView = findViewById(R.id.nav_view);
 
         navView.setOnNavigationItemSelectedListener(this);
         loadMethod(new Frag_home());
     }
-
+    public void setbartitle(String title)                   //to change title in fragments
+    {
+        getSupportActionBar().setTitle(title);
+    }
     private boolean loadMethod(Fragment fr)
     {
         if(fr != null)

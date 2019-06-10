@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Games.RegistrationTT"
+    android:id="@+id/layy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginBottom="30dp"
+            android:id="@+id/register_icon_tt"
+            android:layout_width="167dp"
+            android:layout_height="150dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_tt" />
+
+
+        <Spinner
+            android:id="@+id/spinn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:entries="@array/category_tt">
+
+        </Spinner>
+
+        <EditText
+            android:layout_marginBottom="20dp"
+            android:id="@+id/register_tt_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+            android:inputType="textPersonName"
+            android:hint="Name"
+
+            />
+        <EditText
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tt_hiden"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+            android:inputType="textPersonName"
+            android:hint="Partner"
+
+            />
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/register_tt_sem"
+            android:layout_marginRight="20dp"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:hint="Semester"/>
+        <EditText
+            android:id="@+id/register_tt_roll"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_marginLeft="20dp"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:hint="Roll No"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/register_tt_phone"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_marginBottom="40dp"/>
+
+
+
+        <Button
+            android:id="@+id/register_btn_tt"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:text="Register"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="onClicka"/>
+
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

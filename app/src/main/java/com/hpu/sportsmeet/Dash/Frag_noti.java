@@ -1,4 +1,4 @@
-package com.hpu.sportsmeet;
+package com.hpu.sportsmeet.Dash;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,12 +8,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.zip.Inflater;
+import com.hpu.sportsmeet.R;
 
-public class Frag_home extends Fragment {
+
+public class Frag_noti extends Fragment{
     @Nullable
-    @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, null);
+
+        //set title of activity
+        ((MainMenu) getActivity()).setbartitle("Notification");
+        return inflater.inflate(R.layout.fragment_notification, null);
+
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
     }
 }

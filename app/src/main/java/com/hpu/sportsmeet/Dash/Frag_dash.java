@@ -1,4 +1,4 @@
-package com.hpu.sportsmeet;
+package com.hpu.sportsmeet.Dash;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,15 +11,26 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.hpu.sportsmeet.Games.BDM;
+import com.hpu.sportsmeet.Games.RegistrationVB;
+import com.hpu.sportsmeet.Games.VB;
+import com.hpu.sportsmeet.MainActivity;
+import com.hpu.sportsmeet.R;
+import com.hpu.sportsmeet.Games.TT;
+
 public class Frag_dash extends Fragment {
     private CardView tt,bdm,voley,ckt,nba,soc,fifa,cs,go;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v= inflater.inflate(R.layout.fragment_dashboard,container,false);
 
-        tt=(CardView) v.findViewById(R.id.tabletennis);      //finding view of objects for card views
+        View v= inflater.inflate(R.layout.fragment_dashboard,container,false);
+//set title of activity
+        ((MainMenu) getActivity()).setbartitle("Dashboard");
+
+        //finding view of objects for card views
+        tt=(CardView) v.findViewById(R.id.tabletennis);
         bdm=(CardView) v.findViewById(R.id.badminton);
         voley=(CardView) v.findViewById(R.id.volleyball);
         ckt=(CardView) v.findViewById(R.id.cricket);
@@ -30,13 +41,13 @@ public class Frag_dash extends Fragment {
         go=(CardView) v.findViewById(R.id.go);
 
 
-//setting onCLickListeners for all Card Views
+        //setting onCLickListeners for all Card Views
          tt.setOnClickListener(
                 new View.OnClickListener()
                 {
                     public void onClick(View v)
                     {
-                    startstuff(getActivity(),MainActivity.class);
+                    startstuff(getActivity(), TT.class);
                     }
                 });
         bdm.setOnClickListener(
@@ -44,7 +55,7 @@ public class Frag_dash extends Fragment {
                 {
                     public void onClick(View v)
                     {
-                        startstuff(getActivity(),MainActivity.class);
+                        startstuff(getActivity(), BDM.class);
                     }
                 });
         voley.setOnClickListener(
@@ -52,7 +63,7 @@ public class Frag_dash extends Fragment {
                 {
                     public void onClick(View v)
                     {
-                        startstuff(getActivity(),MainActivity.class);
+                        startstuff(getActivity(), VB.class);
                     }
                 });
         ckt.setOnClickListener(

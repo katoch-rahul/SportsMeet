@@ -11,6 +11,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.hpu.sportsmeet.Dash.MainMenu;
 import com.hpu.sportsmeet.R;
 
 
@@ -65,7 +66,7 @@ public class SignInActivity extends AppCompatActivity {
     }
     public void granted()       //signed in successfully
     {
-        Intent i=new Intent(this, com.hpu.sportsmeet.MainMenu.class);
+        Intent i=new Intent(this, MainMenu.class);
         startActivity(i);
     }
     public void denied()        //wrong password or sth

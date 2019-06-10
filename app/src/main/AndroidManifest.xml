@@ -5,15 +5,31 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
-        android:label="@string/app_name"
+        android:label="Sports Meet Manager"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Games.RegistrationTT"></activity>
+
+        <activity android:name=".Games.BDM"
+            android:label="Badminton"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Games.RegistrationBDM"
+                    android:label="Badminton Registration"></activity>
+        <activity android:name=".Games.VB"
+            android:label="Volleyball"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".Games.RegistrationVB"
+            android:label="Volleyball Registration"></activity>
         <activity
-            android:name=".MainMenu"
+            android:name=".Games.TT"
+            android:label="@string/title_activity_tt"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dash.MainMenu"
             android:label="@string/title_activity_main_menu" />
         <activity android:name=".Login.ForgotPassword" />
-        <activity android:name=".Login.RegisterAftermath" />
         <activity android:name=".Login.RegisterActivity" />
         <activity android:name=".Login.SignInActivity" />
         <activity android:name=".MainActivity">

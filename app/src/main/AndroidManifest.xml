@@ -4,17 +4,34 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/logo"
+        android:label="Sports Meet Manager"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ForgotPassword"></activity>
-        <activity android:name=".Menuu" />
+        <activity android:name=".Games.RegistrationTT"></activity>
 
-        <activity android:name=".RegisterAftermath" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".SignInActivity" />
+        <activity android:name=".Games.BDM"
+            android:label="Badminton"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Games.RegistrationBDM"
+                    android:label="Badminton Registration"></activity>
+        <activity android:name=".Games.VB"
+            android:label="Volleyball"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".Games.RegistrationVB"
+            android:label="Volleyball Registration"></activity>
+        <activity
+            android:name=".Games.TT"
+            android:label="@string/title_activity_tt"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dash.MainMenu"
+            android:label="@string/title_activity_main_menu" />
+        <activity android:name=".Login.ForgotPassword" />
+        <activity android:name=".Login.RegisterActivity" />
+        <activity android:name=".Login.SignInActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

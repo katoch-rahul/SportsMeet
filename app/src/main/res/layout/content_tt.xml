@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:typeface="sans"
             android:textSize="15dp"
-            android:text="Indira Gandhi Sports Complex\nThe Mall, Shimla"/>
+            android:text="@string/Venue_1"/>
         </LinearLayout>
         </android.support.v7.widget.CardView>
         </LinearLayout>
@@ -129,7 +129,7 @@
                         android:layout_height="wrap_content"
                         android:typeface="sans"
                         android:textSize="15dp"
-                        android:text="20th May, Saturday \nto \n23rd May, Tuesday"/>
+                android:text="@string/period_1"></TextView>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
         </LinearLayout>

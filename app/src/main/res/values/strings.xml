@@ -151,7 +151,29 @@
 
     </string-array>
 
-    <string name="tt_about">"The TT Tournament is organised by UIIT during its annual Sports Meet. Participants represent their Batches to compete for the Trophy."</string>
+    <string name="tt_about">"A fast reflexive game where a small ball and bat is used. The bat is used to hit the ball with a goal of making it land in the opponents court. Full court is size of a table with net in middle. Participate and support others. Refreshments will be provided."
+    </string>
+    <string name="bdm_about">"A game where your reflexes are tested. Played between two players. Both men and women can play, mixed pair of one male and female teaming up is also included in same. A racket and a shuttle is used. A racket is used to hit the shuttle so that the shuttle lands in the opponents court and the team wins a point. The team to reach 21 points first wins. Participate and support the participant. Refreshments will be provided."
+    </string>
+    <string name="vb_about">"Imagine ball coming towards you at a speed of 100-200 km/h. That's Volleyball. with two teams comprising of 6 members each, try to gain points by making the ball land in the opponents court. Participate and represent your year. Refreshments will be provided."
+    </string>
+    <string name="ckt_about">"The Gentlemen's Game. A bat and a ball are used where the bowler bowls and batsman hits the ball. the batting side makes a target and the opponent team chases the target. Teams represent their respective batches and compete for Sports Meet Trophy. A Faculty Team also participates. Refreshments will be provided."
+    </string>
+    <string name="fb_about">"World's most popular game. with two teams comprising of 11 members each. Every player tries to collectively score a goal. Looks simple? Try this year, know the game and have an experience to remember. Refreshments will be provided."
+    </string>
+    <string name="bb_about">"World's fastest game played between two teams comprising of five members each. All the players trying to score by putting the ball in their respective baskets. A 40 minute game in which the team with higher points in the end wins. Refreshments will be provided."
+    </string>
+    <string name="FIFA_about">"Are you ready to make Ronaldo and Messi dance to your tunes? For all the gaming enthusiasts out there, UIIT present a FIFA LAN Gaming Tournament. Participate and win the Title of FIFA Master. Bring your own gaming controller. Refreshments will be provided. "
+    </string>
+    <string name="CS_about">"Legends never die. If you still play Counter Strike 1.6 and have 4 buddies to help you detonate and defuse bombs, participate in CS 1.6 Tournament. Each clan has 5 members. Computers will be provided, bring your own accessories. Clan IGLs can register their clan below. Participate and support teams. Refreshments will be provided."
+    </string>
+    <string name="GO_about">"Think your clan can beat the best of UIIT. Think your IGL can get you through tough rounds. If you do, come face us in CS GO Tournament. 5 members in each clan, bring your own mouse and earphones. Refreshments will be provided."
+    </string>
+    <string name="Venue_1">"Indira Gandhi Sports Complex, Mall Rd, Bemloi, Shimla, Himachal Pradesh"</string>
+    <string name="Venue_2">"University Ground, Summer Hill, Shimla, Himachal Pradesh"</string>
+    <string name="Venue_3">"Lab 2, UIIT, Silver Wood Estate, Summerhill, Shimla, Himachal Pradesh"</string>
+<string name="period_1">"5th April 2020 \n to \n 7th April 2020"</string>
+    <string name="period_2">"8th April 2020 \n to \n 12th April 2020"</string>
 
 
 </resources>

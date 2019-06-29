@@ -39,7 +39,7 @@ View v;
         email = findViewById(R.id.emailtf);
         pass = findViewById(R.id.passtf);
         name=findViewById(R.id.nametf);
-        roll=findViewById(R.id.semtf);
+        roll=findViewById(R.id.rolltf2);
         sem=findViewById(R.id.semtf);
         db = FirebaseAuth.getInstance();
         v=findViewById(R.id.user_register_layout);
@@ -80,7 +80,7 @@ View v;
         fd = FirebaseDatabase.getInstance();
         database_ref=fd.getReference();
         User u=new User(name.getText().toString(),sem.getText().toString()
-                            ,email.getText().toString(),roll.getText().toString());
+                            ,roll.getText().toString(),email.getText().toString(),pass.getText().toString());
         String key=database_ref.child("Users").push().getKey();
         database_ref.child("Users").child(key).setValue(u)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {

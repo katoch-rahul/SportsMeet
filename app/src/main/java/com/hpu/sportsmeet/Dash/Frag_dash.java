@@ -11,7 +11,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.hpu.sportsmeet.Games.BB;
 import com.hpu.sportsmeet.Games.BDM;
+import com.hpu.sportsmeet.Games.CKT;
+import com.hpu.sportsmeet.Games.CS;
+import com.hpu.sportsmeet.Games.FB;
+import com.hpu.sportsmeet.Games.FIFA;
+import com.hpu.sportsmeet.Games.GO;
 import com.hpu.sportsmeet.Games.RegistrationVB;
 import com.hpu.sportsmeet.Games.VB;
 import com.hpu.sportsmeet.MainActivity;
@@ -71,7 +77,7 @@ public class Frag_dash extends Fragment {
                 {
                     public void onClick(View v)
                     {
-                        startstuff(getActivity(),MainActivity.class);
+                        startstuff(getActivity(), CKT.class);
                     }
                 });
         nba.setOnClickListener(
@@ -79,7 +85,7 @@ public class Frag_dash extends Fragment {
                 {
                     public void onClick(View v)
                     {
-                        startstuff(getActivity(),MainActivity.class);
+                        startstuff(getActivity(), BB.class);
                     }
                 });
         soc.setOnClickListener(
@@ -87,7 +93,7 @@ public class Frag_dash extends Fragment {
                 {
                     public void onClick(View v)
                     {
-                        startstuff(getActivity(),MainActivity.class);
+                        startstuff(getActivity(), FB.class);
                     }
                 });
         fifa.setOnClickListener(
@@ -95,7 +101,7 @@ public class Frag_dash extends Fragment {
                 {
                     public void onClick(View v)
                     {
-                        startstuff(getActivity(),MainActivity.class);
+                        startstuff(getActivity(), FIFA.class);
                     }
                 });
         cs.setOnClickListener(
@@ -103,7 +109,7 @@ public class Frag_dash extends Fragment {
                 {
                     public void onClick(View v)
                     {
-                        startstuff(getActivity(),MainActivity.class);
+                        startstuff(getActivity(), CS.class);
                     }
                 });
         go.setOnClickListener(
@@ -111,7 +117,7 @@ public class Frag_dash extends Fragment {
                 {
                     public void onClick(View v)
                     {
-                        startstuff(getActivity(),MainActivity.class);
+                        startstuff(getActivity(), GO.class);
                     }
                 });
 

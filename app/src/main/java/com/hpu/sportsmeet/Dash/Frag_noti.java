@@ -16,7 +16,7 @@ public class Frag_noti extends Fragment{
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         //set title of activity
-        ((MainMenu) getActivity()).setbartitle("Notification");
+        ((MainMenu) getActivity()).setbartitle("Options");
         return inflater.inflate(R.layout.fragment_notification, null);
 
     }

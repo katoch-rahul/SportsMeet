@@ -196,5 +196,132 @@
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/cardview_participants"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Participants: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-black" />
+                <TextView
+                    app:fontFamily="sans-serif-black"
+                    android:layout_margin="10dp"
+                    android:text="Men's Singles"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+                <TextView
+                    android:id="@+id/text_bad_men_single"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+                <TextView
+                    app:fontFamily="sans-serif-black"
+                    android:layout_margin="10dp"
+                    android:text="Women's Singles"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+                <TextView
+                    android:id="@+id/text_bad_women_single"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+                <TextView
+                    app:fontFamily="sans-serif-black"
+                    android:layout_margin="10dp"
+                    android:text="Men's Doubles"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+                <TextView
+                    android:id="@+id/text_bad_men_double"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+                <TextView
+                    app:fontFamily="sans-serif-black"
+                    android:layout_margin="10dp"
+                    android:text="Women's Doubles"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+                <TextView
+                    android:id="@+id/text_bad_women_double"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+                <TextView
+                    app:fontFamily="sans-serif-black"
+                    android:layout_margin="10dp"
+                    android:text="Mix Doubles"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+                <TextView
+                    android:id="@+id/text_bad_mix"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

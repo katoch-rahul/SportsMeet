@@ -88,34 +88,34 @@ ScrollView l;
 
 
     public void onClicka(View view)
+    {switch(select)
     {
+        case 0:year="1st year";break;
+        case 1:year="2nd year";break;
+        case 2:year="3rd year";break;
+        case 3:year="4th year";break;
+
+    }
     Team t=new Team(nameCap.getText().toString(),rollCap.getText().toString(),phoneCap.getText().toString(),
             name1.getText().toString(),roll1.getText().toString(),
             name2.getText().toString(),roll2.getText().toString(),
             name3.getText().toString(),roll3.getText().toString(),
             name4.getText().toString(),roll4.getText().toString(),
-            name5.getText().toString(),roll5.getText().toString());
+            name5.getText().toString(),roll5.getText().toString(),year);
 
-    AddTeam("Volley Ball",t,select,ttref);
+    AddTeam("Volley Ball",t,ttref);
 
     }
 
 
 
 
-    public void AddTeam(String game,Team t,int sel,DatabaseReference ref)
+    public void AddTeam(String game,Team t,DatabaseReference ref)
     {
-        switch(sel)
-        {
-            case 0:year="1st Year";break;
-            case 1:year="2nd Year";break;
-            case 2:year="3rd Year";break;
-            case 3:year="4th Year";break;
 
-        }
 
-        key=ref.child(game).child(year).push().getKey();
-        ref.child(game).child(year).child(key).setValue(t)
+        key=ref.child(game).push().getKey();
+        ref.child(game).child(key).setValue(t)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Games.RegistrationVB"
+    android:id="@+id/register_bdm_layy">
+
+    <ScrollView
+        android:id="@+id/register_vb_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_marginBottom="30dp"
+                android:id="@+id/register_icon_bdm"
+                android:layout_width="167dp"
+                android:layout_height="150dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/ic_basket" />
+            <android.support.v7.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:paddingLeft="10dp"
+
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Batch"/>
+                <Spinner android:layout_height="50dp"
+                    android:layout_width="300dp"
+                    android:entries="@array/year"
+                    android:id="@+id/register_vb_spinn"
+                    android:layout_margin="20dp">
+
+                </Spinner>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+
+
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                >
+                <LinearLayout
+                     android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center">
+                    <TextView
+                         android:layout_margin="10dp"
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Team Captain's Details"/>
+            <EditText
+                android:id="@+id/register_vb_cap"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+                <EditText
+                    android:id="@+id/register_vb_cap_roll"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:hint="Roll No"
+                    android:inputType="number"
+                    android:layout_marginRight="20dp"/>
+
+                <EditText
+                    android:id="@+id/register_vb_cap_phone"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    />
+            </LinearLayout>
+                </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="50dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Team Members' Details"/>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp">
+                        <EditText
+                            android:id="@+id/register_vb_mate1"
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:hint="1st TeamMate"/>
+                        <EditText
+                            android:id="@+id/register_vb_mateRoll1"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:hint="Roll No"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp">
+                        <EditText
+                            android:id="@+id/register_vb_mate2"
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:hint="2nd TeamMate"/>
+
+                        <EditText
+                            android:id="@+id/register_vb_mateRoll2"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:hint="Roll No"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp">
+                        <EditText
+                            android:id="@+id/register_vb_mate3"
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:hint="3rd TeamMate"/>
+                        <EditText
+                            android:id="@+id/register_vb_mateRoll3"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:hint="Roll No"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp">
+                        <EditText
+                            android:id="@+id/register_vb_mate4"
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:hint="4th TeamMate"/>
+                        <EditText
+                            android:id="@+id/register_vb_mateRoll4"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:hint="Roll No"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/register_btn_tt"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:text="Register"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="onClicka"
+                android:layout_marginBottom="30dp"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

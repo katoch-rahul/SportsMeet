@@ -2,6 +2,8 @@ package com.hpu.sportsmeet.Login;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +21,7 @@ public class SignInActivity extends AppCompatActivity {
     private FirebaseAuth db;
     EditText ut,pt;
     
-
+    ConstraintLayout l;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public class SignInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         super.setTitle("Sign In");
         setContentView(R.layout.activity_sign_in);
-
+        l=findViewById(R.id.were);
 
         ut=(EditText)findViewById(R.id.ut);
         pt=(EditText)findViewById(R.id.password);
@@ -71,6 +73,7 @@ public class SignInActivity extends AppCompatActivity {
     }
     public void denied()        //wrong password or sth
     {
-        ut.setText("Wrong Username or Password");
-    }
+        Snackbar sb1=Snackbar.make(l," Wrong Username or Password",
+                Snackbar.LENGTH_LONG );
+        sb1.show();    }
 }

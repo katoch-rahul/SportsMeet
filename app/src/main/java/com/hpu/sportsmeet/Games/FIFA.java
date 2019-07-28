@@ -19,14 +19,14 @@ import com.hpu.sportsmeet.Player;
 import com.hpu.sportsmeet.R;
 import com.hpu.sportsmeet.Team;
 
-public class VB extends AppCompatActivity {
+public class FIFA extends AppCompatActivity {
     DatabaseReference ref;
     TextView teams;
     String te=" ";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vb);
+        setContentView(R.layout.activity_fifa);
 
         Toolbar toolbar =findViewById(R.id.toolbar_vb);
         setSupportActionBar(toolbar);
@@ -37,21 +37,21 @@ public class VB extends AppCompatActivity {
     }
     public void Killer(View view)
     {
-        Intent i=new Intent(this, RegistrationVB.class);
+        Intent i=new Intent(this, RegistrationFIFA.class);
         startActivity(i);
     }
 
     public void retrieveTeams() {
-        Query mSingle = ref.child("Volley Ball").orderByKey();
+        Query mSingle = ref.child("FIFA").orderByKey();
         ValueEventListener vel = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Team t;
+               Player p;
                 for (DataSnapshot myItem : dataSnapshot.getChildren()) {
-                    t = myItem.getValue(Team.class);
+                    p = myItem.getValue(Player.class);
                   teams = findViewById(R.id.text_teams);
 
-                    te = te + t.year +" - "+t.captain+" ("+t.phone+")"+ "\n\n" + " ";
+                    te = te + p.name +" ("+p.sem+")\n\n" + " ";
 
                 }
                 teams.setText(te);
@@ -59,7 +59,8 @@ public class VB extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(getApplicationContext(), "Error " + databaseError, Toast.LENGTH_LONG);
+                Toast t=Toast.makeText(getApplicationContext(), "Error " + databaseError, Toast.LENGTH_LONG);
+                t.show();
             }
         };
         mSingle.addValueEventListener(vel);

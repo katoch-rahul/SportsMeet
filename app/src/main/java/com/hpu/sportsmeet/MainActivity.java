@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i=new Intent(this, SignInActivity.class);
         Intent j=new Intent(this, MainMenu.class);
 
-        startActivity(j);
+        startActivity(i);
 
     }
 

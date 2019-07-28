@@ -1,12 +1,12 @@
 package com.hpu.sportsmeet;
 
 public class Player {
-    String name;
-    String partner;
-    String sem;
-    String roll;
+   public  String name;
+    public  String partner;
+    public String sem;
+    public String roll;
 
-   String phone;
+    public  String phone;
 
 
     public Player()

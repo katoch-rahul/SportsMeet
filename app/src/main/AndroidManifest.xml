@@ -9,29 +9,75 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".Games.RegistrationTT"></activity>
 
         <activity android:name=".Games.BDM"
             android:label="Badminton"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+
         <activity android:name=".Games.RegistrationBDM"
                     android:label="Badminton Registration"></activity>
+
         <activity android:name=".Games.VB"
             android:label="Volleyball"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
+        <activity android:name=".Games.CKT"
+            android:label="Cricket"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Games.RegistrationCKT"
+            android:label="Cricket Registration"></activity>
+
+        <activity android:name=".Games.FB"
+            android:label="Football"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Games.RegistrationFB"
+            android:label="Football Registration"></activity>
+
+        <activity android:name=".Games.BB"
+            android:label="Basketball"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Games.RegistrationBB"
+            android:label="Basketball Registration"></activity>
+
+        <activity android:name=".Games.CS"
+            android:label="CS 1.6"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Games.RegistrationCS"
+            android:label="CS 1.6 Registration"></activity>
+
+        <activity android:name=".Games.GO"
+            android:label="CS GO"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Games.RegistrationGO"
+            android:label="CS GO Registration"></activity>
+
+        <activity android:name=".Games.FIFA"
+            android:label="FIFA"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Games.RegistrationFIFA"
+            android:label="FIFA Registration"></activity>
+
         <activity android:name=".Games.RegistrationVB"
             android:label="Volleyball Registration"></activity>
+
         <activity
             android:name=".Games.TT"
             android:label="@string/title_activity_tt"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".Dash.MainMenu"
             android:label="@string/title_activity_main_menu" />
+
         <activity android:name=".Login.ForgotPassword" />
+
         <activity android:name=".Login.RegisterActivity" />
+
         <activity android:name=".Login.SignInActivity" />
+
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -15,18 +15,17 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.hpu.sportsmeet.Player;
 import com.hpu.sportsmeet.R;
 import com.hpu.sportsmeet.Team;
 
-public class VB extends AppCompatActivity {
+public class GO extends AppCompatActivity {
     DatabaseReference ref;
     TextView teams;
     String te=" ";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vb);
+        setContentView(R.layout.activity_go);
 
         Toolbar toolbar =findViewById(R.id.toolbar_vb);
         setSupportActionBar(toolbar);
@@ -37,12 +36,12 @@ public class VB extends AppCompatActivity {
     }
     public void Killer(View view)
     {
-        Intent i=new Intent(this, RegistrationVB.class);
+        Intent i=new Intent(this, RegistrationGO.class);
         startActivity(i);
     }
 
     public void retrieveTeams() {
-        Query mSingle = ref.child("Volley Ball").orderByKey();
+        Query mSingle = ref.child("CS GO").orderByKey();
         ValueEventListener vel = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -51,7 +50,7 @@ public class VB extends AppCompatActivity {
                     t = myItem.getValue(Team.class);
                   teams = findViewById(R.id.text_teams);
 
-                    te = te + t.year +" - "+t.captain+" ("+t.phone+")"+ "\n\n" + " ";
+                    te = te + t.clan +" - "+t.year+" ("+t.phone+")"+ "\n\n" + " ";
 
                 }
                 teams.setText(te);

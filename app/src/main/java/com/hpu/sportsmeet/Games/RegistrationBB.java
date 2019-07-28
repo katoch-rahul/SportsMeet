@@ -2,7 +2,6 @@ package com.hpu.sportsmeet.Games;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -15,17 +14,16 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.hpu.sportsmeet.Player;
 import com.hpu.sportsmeet.R;
 import com.hpu.sportsmeet.Team;
 
-public class RegistrationVB extends AppCompatActivity  {
+public class RegistrationBB extends AppCompatActivity  {
 FirebaseDatabase db;
 DatabaseReference ttref;
 String key;
 String year;
-EditText nameCap,name1,name2,name3,name4,name5;
-EditText rollCap,roll1,roll2,roll3,roll4,roll5,phoneCap;
+EditText nameCap,name1,name2,name3,name4;
+EditText rollCap,roll1,roll2,roll3,roll4,phoneCap;
 Spinner sp;
 int select;
 ScrollView l;
@@ -34,7 +32,7 @@ ScrollView l;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        setContentView(R.layout.activity_registration_vb);
+        setContentView(R.layout.activity_registration_bb);
         sp=findViewById(R.id.register_vb_spinn);
         db=FirebaseDatabase.getInstance();
         ttref=db.getReference();
@@ -45,13 +43,13 @@ ScrollView l;
         name2=findViewById(R.id.register_vb_mate2);
         name3=findViewById(R.id.register_vb_mate3);
         name4=findViewById(R.id.register_vb_mate4);
-        name5=findViewById(R.id.register_vb_mate5);}//name initialise findviewbyID
+          }//name initialise findviewbyID
         {rollCap=findViewById(R.id.register_vb_cap_roll);
         roll1=findViewById(R.id.register_vb_mateRoll1);
         roll2=findViewById(R.id.register_vb_mateRoll2);
         roll3=findViewById(R.id.register_vb_mateRoll3);
         roll4=findViewById(R.id.register_vb_mateRoll4);
-        roll5=findViewById(R.id.register_vb_mateRoll5);}//roll initialise findviewbyID
+         }//roll initialise findviewbyID
         phoneCap=findViewById(R.id.register_vb_cap_phone);
 
         spinnerChoice(sp);
@@ -101,9 +99,9 @@ ScrollView l;
             name2.getText().toString(),roll2.getText().toString(),
             name3.getText().toString(),roll3.getText().toString(),
             name4.getText().toString(),roll4.getText().toString(),
-            name5.getText().toString(),roll5.getText().toString(),year);
+             year);
 
-    AddTeam("Volley Ball",t,ttref);
+    AddTeam("Basketball",t,ttref);
 
     }
 
@@ -119,7 +117,7 @@ ScrollView l;
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Snackbar sb1=Snackbar.make(l," Registered Successfully",
+                        Snackbar sb1=Snackbar.make(l,"Team Registered Successfully",
                                 Snackbar.LENGTH_LONG );
                         sb1.show();
                     }

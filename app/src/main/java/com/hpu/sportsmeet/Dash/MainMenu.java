@@ -21,7 +21,7 @@ public class MainMenu extends AppCompatActivity
         BottomNavigationView navView = findViewById(R.id.nav_view);
 
         navView.setOnNavigationItemSelectedListener(this);
-        loadMethod(new Frag_home());
+        loadMethod(new Frag_dash());    //setting first fragment to show
     }
     public void setbartitle(String title)                   //to change title in fragments
     {
@@ -46,9 +46,9 @@ public class MainMenu extends AppCompatActivity
 
         switch(item.getItemId())
         {
-            case(R.id.navigation_home):
-                frag=new Frag_home();
-                break;
+           // case(R.id.navigation_home):
+             //   frag=new Frag_home();
+            //    break;
             case(R.id.navigation_dashboard):
                 frag=new Frag_dash();
                 break;

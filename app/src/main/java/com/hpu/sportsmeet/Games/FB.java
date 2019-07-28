@@ -1,5 +1,4 @@
 package com.hpu.sportsmeet.Games;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -15,48 +14,36 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.hpu.sportsmeet.Player;
 import com.hpu.sportsmeet.R;
 import com.hpu.sportsmeet.Team;
-
-public class VB extends AppCompatActivity {
+public class FB extends AppCompatActivity {
     DatabaseReference ref;
     TextView teams;
     String te=" ";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vb);
-
+        setContentView(R.layout.activity_fb);
         Toolbar toolbar =findViewById(R.id.toolbar_vb);
         setSupportActionBar(toolbar);
-
         ref= FirebaseDatabase.getInstance().getReference();
        retrieveTeams();
-
     }
     public void Killer(View view)
-    {
-        Intent i=new Intent(this, RegistrationVB.class);
-        startActivity(i);
-    }
-
+    { Intent i=new Intent(this, RegistrationFB.class);
+        startActivity(i); }
     public void retrieveTeams() {
-        Query mSingle = ref.child("Volley Ball").orderByKey();
+        Query mSingle = ref.child("Football").orderByKey(); //change child here for next game
         ValueEventListener vel = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Team t;
                 for (DataSnapshot myItem : dataSnapshot.getChildren()) {
                     t = myItem.getValue(Team.class);
-                  teams = findViewById(R.id.text_teams);
-
-                    te = te + t.year +" - "+t.captain+" ("+t.phone+")"+ "\n\n" + " ";
-
-                }
+                    teams = findViewById(R.id.text_teams);
+                    te = te + t.year +" - "+t.captain+" ("+t.phone+")"+ "\n\n" + " "; }
                 teams.setText(te);
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(getApplicationContext(), "Error " + databaseError, Toast.LENGTH_LONG);

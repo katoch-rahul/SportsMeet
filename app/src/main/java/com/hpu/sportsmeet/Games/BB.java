@@ -15,18 +15,17 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.hpu.sportsmeet.Player;
 import com.hpu.sportsmeet.R;
 import com.hpu.sportsmeet.Team;
 
-public class VB extends AppCompatActivity {
+public class BB extends AppCompatActivity {
     DatabaseReference ref;
     TextView teams;
     String te=" ";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vb);
+        setContentView(R.layout.activity_bb);
 
         Toolbar toolbar =findViewById(R.id.toolbar_vb);
         setSupportActionBar(toolbar);
@@ -37,12 +36,12 @@ public class VB extends AppCompatActivity {
     }
     public void Killer(View view)
     {
-        Intent i=new Intent(this, RegistrationVB.class);
+        Intent i=new Intent(this, RegistrationBB.class);
         startActivity(i);
     }
 
     public void retrieveTeams() {
-        Query mSingle = ref.child("Volley Ball").orderByKey();
+        Query mSingle = ref.child("Basketball").orderByKey();
         ValueEventListener vel = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
